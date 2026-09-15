@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chef Llajuita: recetas tradicionales de comida boliviana organizadas por categorías.">
+    <meta name="keywords" content="recetas bolivianas, comida boliviana, silpancho, salteña, somó, papa a la huancaína">
+    <meta name="author" content="Chef Llajuita">
+    <title>Chef Llajuita | Recetas Bolivianas</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="container header-content">
+
+            <a href="#inicio" class="logo" aria-label="Chef Llajuita - Inicio">
+                <span class="logo-icon">CL</span>
+
+                <img class="logo-icon" src="logo.png" alt="Logo Chef Llajuita">
+                    <strong>Chef Llajuita</strong>
+                    <small>Sabores de Bolivia</small>
+                </span>
+            </a>
+
+            <nav class="main-nav" aria-label="Navegación principal">
+                <a href="#inicio">Inicio</a>
+                <a href="#buscar">Buscar</a>
+                <a href="#categorias">Categorías</a>
+                <a href="#recetas">Recetas</a>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <main>
+
+        <section id="inicio" class="hero">
+            <div class="container hero-content">
+
+                <div class="hero-text">
+
+                    <span class="eyebrow">GASTRONOMÍA BOLIVIANA</span>
+
+                    <h1>
+                        El sabor de Bolivia,
+                        <span>en cada receta.</span>
+                    </h1>
+
+                    <p>
+                        Descubre y prepara recetas tradicionales de Bolivia
+                        de una manera sencilla, ordenada y agradable.
+                    </p>
+
+                    <a href="#recetas" class="primary-button">
+                        Explorar recetas
+                    </a>
+
+                </div>
+
+
+                <div class="hero-image">
+                    <img src="imagen"
+                         alt="Plato de comida tradicional">
+                </div>
+
+            </div>
+        </section>
+
+
+        <section id="buscar" class="search-section">
+            <div class="container">
+
+                <div class="section-heading center">
+                    <span class="eyebrow">ENCUENTRA TU RECETA</span>
+                    <h2>¿Qué quieres cocinar hoy?</h2>
+                </div>
+
+                <div class="search-box">
+
+                    <span aria-hidden="true">⌕</span>
+
+                    <input type="search"
+                           id="searchInput"
+                           placeholder="Buscar una receta..."
+                           aria-label="Buscar recetas">
+
+                    <button id="clearSearch"
+                            type="button"
+                            aria-label="Limpiar búsqueda">
+                        ×
+                    </button>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <section id="categorias" class="section">
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <div>
+                        <span class="eyebrow">EXPLORA</span>
+                        <h2>Categorías</h2>
+                    </div>
+
+                </div>
+
+
+                <div class="category-grid">
+
+                    <button class="category-card active"
+                            data-category="Todas">
+                        <span class="category-icon">🍽️</span>
+                        <strong>Todas</strong>
+                        <small>Ver recetas</small>
+                    </button>
+
+
+                    <button class="category-card"
+                            data-category="Ensaladas">
+                        <span class="category-icon">🥗</span>
+                        <strong>Ensaladas</strong>
+                        <small>Frescas y naturales</small>
+                    </button>
+
+
+                    <button class="category-card"
+                            data-category="Sopas">
+                        <span class="category-icon">🍲</span>
+                        <strong>Sopas</strong>
+                        <small>Calientes y tradicionales</small>
+                    </button>
+
+
+                    <button class="category-card"
+                            data-category="Platos fuertes">
+                        <span class="category-icon">🍛</span>
+                        <strong>Platos fuertes</strong>
+                        <small>Sabores de Bolivia</small>
+                    </button>
+
+
+                    <button class="category-card"
+                            data-category="Postres">
+                        <span class="category-icon">🍰</span>
+                        <strong>Postres</strong>
+                        <small>Dulces tradicionales</small>
+                    </button>
+
+
+                    <button class="category-card"
+                            data-category="Bebidas">
+                        <span class="category-icon">🥤</span>
+                        <strong>Bebidas</strong>
+                        <small>Refrescantes y típicas</small>
+                    </button>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <section id="recetas" class="section recipes-section">
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <div>
+                        <span class="eyebrow">RECETAS BOLIVIANAS</span>
+                        <h2>Nuestras recetas</h2>
+                    </div>
+
+                    <span id="recipeCount"
+                          class="recipe-count">
+                    </span>
+
+                </div>
+
+
+                <div id="recipeGrid"
+                     class="recipe-grid">
+                </div>
+
+
+                <div id="emptyState"
+                     class="empty-state hidden">
+
+                    <div class="empty-icon">🍽️</div>
+
+                    <h3>No encontramos esa receta</h3>
+
+                    <p>
+                        Prueba buscando con otro nombre
+                        o selecciona otra categoría.
+                    </p>
+
+                    <button id="resetButton"
+                            class="primary-button">
+                        Ver todas
+                    </button>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <div id="recipeModal"
+         class="modal hidden"
+         aria-hidden="true">
+
+        <div class="modal-background"
+             data-close>
+        </div>
+
+
+        <article class="recipe-modal"
+                 role="dialog"
+                 aria-modal="true"
+                 aria-labelledby="modalTitle">
+
+            <button class="close-modal"
+                    type="button"
+                    data-close
+                    aria-label="Cerrar receta">
+                ×
+            </button>
+
+
+            <img id="modalImage"
+                 class="modal-image"
+                 src="imagen"
+                 alt="Imagen de la receta">
+
+
+            <div class="modal-content">
+
+                <span id="modalCategory"
+                      class="recipe-tag">
+                </span>
+
+                <h2 id="modalTitle"></h2>
+
+                <p id="modalDescription"
+                   class="modal-description">
+                </p>
+
+
+                <div class="modal-info">
+
+                    <span>
+                        ⏱
+                        <strong id="modalTime"></strong>
+                    </span>
+
+                    <span>
+                        👥
+                        <strong id="modalServings"></strong>
+                    </span>
+
+                    <span>
+                        📍
+                        <strong id="modalRegion"></strong>
+                    </span>
+
+                </div>
+
+
+                <div class="recipe-detail-grid">
+
+                    <div>
+
+                        <h3>Ingredientes</h3>
+
+                        <ul id="modalIngredients"></ul>
+
+                    </div>
+
+
+                    <div>
+
+                        <h3>Preparación</h3>
+
+                        <ol id="modalSteps"></ol>
+
+                    </div>
+
+                </div>
+
+
+                <button id="closeRecipeButton"
+                        class="primary-button"
+                        type="button">
+                    Cerrar receta
+                </button>
+
+            </div>
+
+        </article>
+
+    </div>
+
+
+    <footer class="site-footer">
+
+        <div class="container footer-content">
+
+            <div>
+
+                <strong>Chef Llajuita</strong>
+
+                <p>
+                    Recetas tradicionales de la cocina boliviana.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <p>
+                    Proyecto educativo • Bolivia
+                </p>
+
+                <p>
+                    © 2026 Chef Llajuita. Todos los derechos reservados.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
