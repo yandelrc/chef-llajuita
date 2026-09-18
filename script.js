@@ -7,7 +7,7 @@ const recipes = [
     time: "30 min",
     servings: "4 porciones",
     region: "Bolivia",
-    image: "./imagenes/imagen.png",
+    image: "./imagenes/imagen.png?v=2501761",
     ingredients: [
       "1 kg de papas",
       "4 ajíes amarillos",
@@ -32,7 +32,7 @@ const recipes = [
     time: "45 min",
     servings: "4 porciones",
     region: "Cochabamba",
-    image: "./imagenes/imagen.png",
+    image: "./imagenes/imagen.png?v=2501761",
     ingredients: [
       "500 g de carne de res magra",
       "2 tazas de pan molido",
@@ -60,7 +60,7 @@ const recipes = [
     time: "90 min",
     servings: "10 unidades",
     region: "Bolivia",
-    image: "./imagenes/imagen.png",
+    image: "./imagenes/imagen.png?v=2501761",
     ingredients: [
       "Harina de trigo",
       "Manteca",
@@ -87,7 +87,7 @@ const recipes = [
     time: "60 min",
     servings: "6 vasos",
     region: "Oriente boliviano",
-    image: "./imagenes/imagen.png",
+    image: "./imagenes/imagen.png?v=2501761",
     ingredients: [
       "1 taza de maíz pelado",
       "2 litros de agua",
@@ -163,7 +163,7 @@ function renderRecipes() {
 
       <div class="recipe-image">
         <img
-          src="./imagenes/imagen.png"
+          src="./imagenes/imagen.png?v=2501761"
           alt="${recipe.name}"
         >
       </div>
