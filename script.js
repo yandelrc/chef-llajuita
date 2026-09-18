@@ -1,128 +1,33 @@
 const recipes = [
   {
     id: 1,
-    name: "Papa a la huancaína",
-    category: "Ensaladas",
-    description: "Papas cocidas acompañadas de una cremosa salsa de ají amarillo y queso.",
-    time: "30 min",
-    servings: "4 porciones",
+    name: "Alfajores de maizena",
+    category: "Postres",
+    description: "Alfajores suaves de maizena rellenos con dulce de leche y cubiertos con coco rallado.",
+    time: "1 hora y 20 minutos aprox.",
+    servings: "12 porciones",
     region: "Bolivia",
     image: "https://yandelrc.github.io/chef-llajuita/imagenes/imagen.png?v=2501761",
     ingredients: [
-      "1 kg de papas",
-      "4 ajíes amarillos",
-      "200 g de queso fresco",
-      "1/2 taza de leche evaporada",
-      "4 galletas saladas",
-      "Aceite, sal y pimienta al gusto"
+      "2 tazas de maicena (almidón de maíz)",
+      "1 taza de harina de trigo cernida",
+      "5 cucharadas de mantequilla o margarina a temperatura ambiente",
+      "3/4 taza de azúcar molida o impalpable",
+      "4 huevos, o 3 yemas y 1 huevo entero para que queden más suaves",
+      "3 cucharaditas de polvo de hornear",
+      "Ralladura de 1/2 limón",
+      "1 cucharadita de esencia de vainilla",
+      "1 lata o taza de dulce de leche (manjar)",
+      "1/2 taza de coco rallado"
     ],
     steps: [
-      "Lava y cocina las papas hasta que estén suaves. Déjalas enfriar y córtalas en rodajas.",
-      "Limpia los ajíes y licúalos con el queso, la leche, las galletas y un poco de aceite.",
-      "Procesa hasta obtener una salsa cremosa y rectifica la sal.",
-      "Sirve las papas con la salsa por encima y presenta el plato."
-    ]
-  },
-
-  {
-    id: 2,
-    name: "Silpancho",
-    category: "Platos fuertes",
-    description: "Plato tradicional cochabambino con carne apanada, arroz, papa, huevo y sarsa.",
-    time: "45 min",
-    servings: "4 porciones",
-    region: "Cochabamba",
-    image: "https://yandelrc.github.io/chef-llajuita/imagenes/imagen.png?v=2501761",
-    ingredients: [
-      "500 g de carne de res magra",
-      "2 tazas de pan molido",
-      "4 huevos",
-      "4 papas medianas",
-      "2 tazas de arroz blanco",
-      "2 tomates maduros",
-      "1 cebolla morada",
-      "1 locoto verde",
-      "Sal, pimienta y comino al gusto"
-    ],
-    steps: [
-      "Corta la carne en cuatro filetes, agrega sal, pimienta y comino. Cubre con pan molido y aplánala hasta que quede delgada.",
-      "Cocina las papas, córtalas y dóralas en una sartén con aceite caliente.",
-      "Fríe la carne aplanada durante 1 a 2 minutos por lado. Luego prepara los huevos fritos.",
-      "Prepara la sarsa con tomate, cebolla y locoto. Sirve el arroz, las papas, la carne, el huevo y finalmente la sarsa."
-    ]
-  },
-
-  {
-    id: 3,
-    name: "Salteña",
-    category: "Platos fuertes",
-    description: "Empanada boliviana horneada con masa dorada y un tradicional relleno jugoso.",
-    time: "90 min",
-    servings: "10 unidades",
-    region: "Bolivia",
-    image: "https://yandelrc.github.io/chef-llajuita/imagenes/imagen.png?v=2501761",
-    ingredients: [
-      "Harina de trigo",
-      "Manteca",
-      "Carne de res o pollo",
-      "Papa",
-      "Arvejas",
-      "Huevo cocido",
-      "Ají colorado",
-      "Caldo y condimentos"
-    ],
-    steps: [
-      "Prepara la masa mezclando harina, manteca y los ingredientes líquidos hasta obtener una masa uniforme.",
-      "Cocina el relleno con carne, papa, arvejas, ají y caldo hasta obtener un jigote espeso.",
-      "Arma cada salteña colocando el relleno en un disco de masa y cerrando con repulgue.",
-      "Hornea hasta que la masa esté dorada. Sirve calientes."
-    ]
-  },
-
-  {
-    id: 4,
-    name: "Somó",
-    category: "Bebidas",
-    description: "Bebida tradicional boliviana preparada a base de maíz, refrescante y nutritiva.",
-    time: "60 min",
-    servings: "6 vasos",
-    region: "Oriente boliviano",
-    image: "https://yandelrc.github.io/chef-llajuita/imagenes/imagen.png?v=2501761",
-    ingredients: [
-      "1 taza de maíz pelado",
-      "2 litros de agua",
-      "Canela al gusto",
-      "Clavo de olor al gusto",
-      "Azúcar al gusto"
-    ],
-    steps: [
-      "Lava el maíz y déjalo en remojo si es necesario.",
-      "Cocina el maíz en abundante agua hasta que los granos estén suaves.",
-      "Agrega canela y clavo de olor y continúa la cocción para aromatizar.",
-      "Deja enfriar, endulza al gusto y sirve bien frío."
-    ]
-  },
-
-  {
-    id: 5,
-    name: "Api con pastel",
-    category: "Desayunos",
-    description: "Desayuno tradicional boliviano con api morado caliente y pastel frito.",
-    time: "35 min",
-    servings: "4 porciones",
-    region: "Bolivia",
-    image: "https://yandelrc.github.io/chef-llajuita/imagenes/imagen.png?v=2501761",
-    ingredients: [
-      "1 taza de maíz morado molido",
-      "4 tazas de agua",
-      "Canela y clavo de olor",
-      "Azúcar al gusto",
-      "4 pasteles fritos"
-    ],
-    steps: [
-      "Disuelve el maíz morado en agua fría y cuela la mezcla.",
-      "Cocina a fuego medio con canela y clavo de olor, removiendo hasta que espese.",
-      "Endulza al gusto y sirve el api caliente acompañado de pasteles fritos."
+      "Acremar la base: bate enérgicamente la mantequilla con el azúcar molida hasta obtener una consistencia cremosa, suave y blanquecina.",
+      "Agregar los húmedos: añade los huevos o yemas, la esencia de vainilla y la ralladura de limón. Bate hasta integrar por completo.",
+      "Incorporar los secos: tamiza la maicena, la harina y el polvo de hornear. Agrégalos poco a poco y une sin amasar en exceso, hasta formar una masa suave que no se pegue a los dedos.",
+      "Reposo: envuelve la masa en papel film y refrigérala durante 30 a 45 minutos.",
+      "Estirar y cortar: espolvorea harina en la mesa, estira la masa hasta dejarla de 1/2 centímetro y corta círculos con un molde o vaso pequeño.",
+      "Horneado: coloca las tapitas en una bandeja enmantecada y hornea a 160 °C - 180 °C durante 12 a 15 minutos. Deben quedar blancas arriba y apenas doradas en la base. Deja enfriar por completo.",
+      "Armado: unta una tapita con dulce de leche, coloca otra encima y presiona suavemente. Finalmente, rueda los bordes por el coco rallado para que se adhiera al dulce de leche."
     ]
   }
 ];
