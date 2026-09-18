@@ -29,6 +29,14 @@ const recipes = [
       "Estirar y cortar: espolvorea harina en la mesa, estira la masa hasta dejarla de 1/2 centímetro y corta círculos con un molde o vaso pequeño.",
       "Horneado: coloca las tapitas en una bandeja enmantecada y hornea a 160 °C - 180 °C durante 12 a 15 minutos. Deben quedar blancas arriba y apenas doradas en la base. Deja enfriar por completo.",
       "Armado: unta una tapita con dulce de leche, coloca otra encima y presiona suavemente. Finalmente, rueda los bordes por el coco rallado para que se adhiera al dulce de leche."
+    ],
+    nutrition: [
+      "Calorías: 220 a 250 kcal aproximadamente",
+      "Carbohidratos: 32 - 35 g",
+      "Grasas totales: 8 - 10 g",
+      "Grasas saturadas: 4.5 g",
+      "Proteínas: 3 - 4 g",
+      "Fibra: 0.5 g"
     ]
   }
 ];
@@ -190,6 +198,12 @@ function openRecipe(id) {
   document.getElementById("modalSteps").innerHTML =
     recipe.steps
         .map(step => `<li>${step}</li>`)
+      .join("");
+
+
+  document.getElementById("modalNutrition").innerHTML =
+    recipe.nutrition
+      .map(item => `<li>${item}</li>`)
       .join("");
 
 
