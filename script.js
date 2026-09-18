@@ -4,6 +4,7 @@ const recipes = [
     name: "Alfajores de maizena",
     category: "Postres",
     description: "Alfajores suaves de maizena rellenos con dulce de leche y cubiertos con coco rallado.",
+    searchTerms: ["alfafo", "alfafores", "alfafore", "alfajo"],
     time: "1 hora y 20 minutos aprox.",
     servings: "12 porciones",
     region: "Bolivia",
@@ -71,6 +72,9 @@ function getFilteredRecipes() {
       normalize(recipe.description).includes(search) ||
       normalize(recipe.category).includes(search) ||
       normalize(recipe.region).includes(search) ||
+      recipe.searchTerms.some(term =>
+        normalize(term).includes(search) || search.includes(normalize(term))
+      ) ||
       recipe.ingredients.some(ingredient =>
         normalize(ingredient).includes(search)
       );
