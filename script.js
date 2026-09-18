@@ -101,6 +101,29 @@ const recipes = [
       "Agrega canela y clavo de olor y continúa la cocción para aromatizar.",
       "Deja enfriar, endulza al gusto y sirve bien frío."
     ]
+  },
+
+  {
+    id: 5,
+    name: "Api con pastel",
+    category: "Desayunos",
+    description: "Desayuno tradicional boliviano con api morado caliente y pastel frito.",
+    time: "35 min",
+    servings: "4 porciones",
+    region: "Bolivia",
+    image: "https://yandelrc.github.io/chef-llajuita/imagenes/imagen.png?v=2501761",
+    ingredients: [
+      "1 taza de maíz morado molido",
+      "4 tazas de agua",
+      "Canela y clavo de olor",
+      "Azúcar al gusto",
+      "4 pasteles fritos"
+    ],
+    steps: [
+      "Disuelve el maíz morado en agua fría y cuela la mezcla.",
+      "Cocina a fuego medio con canela y clavo de olor, removiendo hasta que espese.",
+      "Endulza al gusto y sirve el api caliente acompañado de pasteles fritos."
+    ]
   }
 ];
 
@@ -323,6 +346,10 @@ document.addEventListener("click", event => {
 
 
     renderRecipes();
+
+    document
+      .getElementById("recetas")
+      .scrollIntoView({ behavior: "smooth", block: "start" });
   }
 
 
