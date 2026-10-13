@@ -8,7 +8,7 @@ const recipes = [
     time: "1 hora y 20 minutos aprox.",
     servings: "12 porciones",
     region: "Bolivia",
-    image: "https://yandelrc.github.io/chef-llajuita/imagenes/imagen.png?v=2501761",
+    image: "imagenes/alfafores.jfif",
     ingredients: [
       "2 tazas de maicena (almidón de maíz)",
       "1 taza de harina de trigo cernida",
@@ -103,7 +103,7 @@ function renderRecipes() {
 
       <div class="recipe-image">
         <img
-          src="https://yandelrc.github.io/chef-llajuita/imagenes/imagen.png?v=2501761"
+          src="${recipe.image}"
           alt="${recipe.name}"
         >
       </div>
